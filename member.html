@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member - FE MemberShip</title>
+    <script src="https://kit.fontawesome.com/eef85430e7.js" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <section class="member">
+        <section class="regMem">
+            <h1>YTU SE Team Membership</h1>
+            <form onsubmit="return onAddMem()">
+                <div class="input-block">
+                    <label>Username</label>
+                    <input type="text" name="userName" id="username" value="">
+                </div>
+                <div class="input-block">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" value="">
+                </div>
+                <div class="input-block">
+                        <label>Team</label>
+                        <div class="select-box">
+                            <div class="box" > 
+                                <select name="team" id="team" value="">
+                                    <option value="FE" selected>FE</option>
+                                    <option value="BE">BE</option>
+                                    <option value="DK">DK</option>
+                                    <option value="DB">DB</option>
+                                    <option value="ALL">ALL</option>
+                                </select>
+                            </div>
+                        </div>
+                </div>
+                <div class="input-block">
+                    <input type="submit" value="&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp; Add">
+                </div>
+            </form>
+        </section>
+        <section class="listMem">
+            <h2>List of Members</h2>
+            <hr>
+            <div class="memTable">
+                <table  id="myTable" border="1">
+                    <tr>
+                        <th>Username</th>
+                        <th>Name</td>
+                        <th>Team</th>
+                    </tr>
+                </table>
+                
+            </div>
+            
+        </section>
+    </section>
+    
+    <script src="js/member.js"></script>
+</body>
+</html>
